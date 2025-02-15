@@ -1,0 +1,89 @@
+@media screen and (max-width: 768px) {
+    #containerlist, #containertutorials, #containerform, #containertutorial{
+        display: grid;
+        grid-template-areas: 
+            "header header header"
+            "mainnav mainnav mainnav"
+            "haupt haupt haupt"
+            "asid asid asid"
+            "footer footer footer";
+        grid-template-columns: 20% 60% 20%;
+    }
+
+    header { grid-area: header; }
+    nav { grid-area: mainnav; }
+    main { grid-area: haupt; }
+    aside { grid-area: asid; }
+    footer { grid-area: footer; }
+}
+
+
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 1.5rem; /* Kleinere Schriftgröße für den Titel */
+        color: #ff6600; /* Neue Farbe für den Titel (Orange) */
+    }
+}
+
+
+
+
+/* Allgemeines Styling für Navigation */
+nav {
+    background-color: #333;
+    padding: 10px;
+}
+
+nav p {
+    margin: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+}
+
+/* Menü-Icon für mobile Ansicht */
+#menuToggle {
+    display: none;
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: white;
+}
+
+/* Verstecke Links und zeige Menü-Icon bei einer Breite ≤ 480px */
+@media screen and (max-width: 480px) {
+    #navLinks {
+        display: none; /* Verstecke die Links standardmäßig */
+    }
+
+    #menuToggle {
+        display: block; /* Zeige das Menü-Icon */
+    }
+
+    /* Links untereinander anzeigen, wenn sie sichtbar sind */
+    #navLinks a {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
+
+/* Links nebeneinander anzeigen, wenn der Bildschirm > 480px ist */
+@media screen and (min-width: 481px) {
+    #navLinks {
+        display: block;
+    }
+
+    #menuToggle {
+        display: none; /* Menü-Icon ausblenden */
+    }
+
+    #navLinks a {
+        display: inline-block;
+        margin-right: 20px;
+    }
+}

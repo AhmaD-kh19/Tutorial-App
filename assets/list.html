@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Web-Anwendung für Tutorials zu verschiedenen IT-Themen.">
+    <meta name="author" content="Fh Dortmund">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial-App</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
+    <link rel="stylesheet" type="text/css" href="css/navigation.css">
+    <link rel="stylesheet" type="text/css" href="css/typography.css">
+    <link rel="stylesheet" type="text/css" href="css/flexbox.css">
+    <link rel="stylesheet" type="text/css" href="css/tiles.css">
+    <link rel="stylesheet" type="text/css" href="css/mobile.css" media="screen and (max-width: 768px)">
+    <link rel="stylesheet" type="text/css" href="css/desktop.css" media="screen and (min-width: 769px)">
+    <!-- Füge Font Awesome CDN hinzu -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Kopfbereich -->
+    <header>
+        <figure>
+            <img src="images/webinar.png" alt="Logo der Tutorial-App" width="50" height="50">
+            <figcaption>Tutorial Logo</figcaption>
+        </figure>
+        <h1>Titel der Web-Anwendung</h1>
+    </header>
+
+    <!-- Navigationsmenü -->
+    <nav>
+        <p>
+            <a href="list.html">Liste der Kategorien</a> |
+            <a href="tutorials.html">Tutorials der Kategorien</a> |
+            <a href="tutorial.html">Details zum Tutorial</a> |
+            <a href="form.html">Hinzufügen zum Tutorial</a>
+        </p>
+    </nav>
+
+    <div id="containerlist">
+        <!-- Hauptinhalt -->
+        <main>
+
+            <form id="searchForm" action="https://labs.inf.fh-dortmund.de/tutorialService/testTutorialSearch.php"
+                method="get">
+                <label for="search">Suche:</label>
+                <input type="text" id="search" name="search" required minlength="4" maxlength="20" pattern="^[A-Z].*"
+                    placeholder="Suchbegriff eingeben"
+                    title="Der Begriff muss mit einem Großbuchstaben beginnen, und zwischen 4 und 20 Zeichen lang sein.">
+                <button type="submit">Suchen</button>
+            </form>
+
+            <h2>Wählen Sie eine Kategorie, um mehr Tutorials zu sehen:</h2>
+            <div class="kachel-container"> <!-- Container für die Kacheln -->
+
+                <!-- Kategorie 1: Web-Entwicklung -->
+                <a href="tutorials.html?category=Web-Entwicklung" class="kachel">
+                    <figure>
+                        <img src="images/seo-und-web.png" alt="Icon für Web-Entwicklung">
+                        <figcaption>Web-Entwicklung</figcaption>
+                    </figure>
+                </a>
+
+                <!-- Kategorie 2: Enterprise-Software -->
+                <a href="tutorials.html?category=Enterprise-Software" class="kachel">
+                    <figure>
+                        <img src="images/erp.png" alt="Icon für Enterprise-Software">
+                        <figcaption>Enterprise-Software</figcaption>
+                    </figure>
+                </a>
+
+                <!-- Kategorie 3: Cybersicherheit -->
+                <a href="tutorials.html?category=Cybersicherheit" class="kachel">
+                    <figure>
+                        <img src="images/cybersicherheit.png" alt="Icon für Cybersicherheit">
+                        <figcaption>Cybersicherheit</figcaption>
+                    </figure>
+                </a>
+
+                <!-- Kategorie 4: Datenanalyse -->
+                <a href="tutorials.html?category=Datenanalyse" class="kachel">
+                    <figure>
+                        <img src="images/daten.png" alt="Icon für Datenanalyse">
+                        <figcaption>Datenanalyse</figcaption>
+                    </figure>
+                </a>
+
+            </div>
+        </main>
+
+
+        <!-- Zusatzinformationen (neueste Tutorials) -->
+        <aside>
+            <h3>Neueste Tutorials</h3>
+            <ul>
+                <li>
+                    <strong><a href="tutorial.html">Node.js - Schnelleinstieg</a></strong><br>
+                    <em>Datum:</em> 10. Januar 2024 | <em>Dauer:</em> 2 Std. 35 Min.
+                </li>
+                <li>
+                    <strong><a href="tutorial.html">HTML - Grundlagen</a></strong><br>
+                    <em>Datum:</em> 5. Februar 2024 | <em>Dauer:</em> 1 Std. 20 Min.
+                </li>
+                <li>
+                    <strong><a href="tutorial.html">JavaScript für Einsteiger</a></strong><br>
+                    <em>Datum:</em> 12. März 2024 | <em>Dauer:</em> 3 Std. 10 Min.
+                </li>
+            </ul>
+        </aside>
+    </div>
+
+    <!-- Fußbereich -->
+    <footer>
+        <p>&copy; 2024 Web-Anwendung für Tutorials. Alle Rechte vorbehalten.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/burgermenu.js"></script>
+
+</body>
+
+</html>

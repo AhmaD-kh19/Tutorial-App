@@ -1,0 +1,20 @@
+
+@media screen and (min-width: 769px) {
+    #containerlist, #containertutorials, #containerform, #containertutorial {
+        display: grid;
+        grid-template-areas: 
+            "header header header"
+            "mainnav mainnav mainnav"
+            "haupt haupt asid"
+            "haupt haupt asid"
+            "haupt haupt asid"
+            "footer footer footer";
+        grid-template-columns: 20% 60% 20%;
+    }
+
+    header { grid-area: header; }
+    nav { grid-area: mainnav; }
+    main { grid-area: haupt; }
+    aside { grid-area: asid; }
+    footer { grid-area: footer; }
+}

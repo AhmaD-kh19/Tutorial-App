@@ -1,0 +1,30 @@
+main, aside{
+    border: 1px solid white;
+    background-color: bisque;
+    margin: 15px;
+    padding: 1em;
+    
+  }
+  header{
+    margin: 15px;
+    padding: 1em;
+  }
+  
+  #containertutorials, #containerform  { 
+    display: grid; 
+    grid-template-areas: "header header header"
+                         "mainNav mainNav mainNav"
+                         "haupt haupt aside"
+                         "haupt haupt aside"
+                         "haupt haupt aside"
+                         "footer footer footer";
+    grid-template-columns: 20% 60% 20%;
+  }
+
+
+  
+  header { grid-area: header; }
+  nav { grid-area: mainNav; }
+  main { grid-area: haupt; }
+  aside { grid-area: aside; }
+  footer { grid-area: footer; }

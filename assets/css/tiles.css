@@ -1,0 +1,38 @@
+/* Container für die Kacheln */
+.kachel-container {
+    display: flex;
+    flex-wrap: wrap; /* Erlaubt das Umbrechen der Kacheln in die nächste Zeile */
+    gap: 20px; /* Abstand zwischen Kacheln */
+    justify-content: center; /* Zentriert die Kacheln */
+}
+
+/* Stil für jede Kachel */
+.kachel {
+    display: flex;
+    flex-direction: column; /* Vertikale Anordnung */
+    align-items: center; /* Horizontale Zentrierung */
+    justify-content: center; /* Vertikale Zentrierung */
+   width: 150px; /* Feste Breite */
+    height: 150px; /* Feste Höhe */ 
+    background-color: rgb(0, 183, 255);
+    color: white; /* Textfarbe */
+    text-decoration: none; /* Keine Unterstreichung */
+    border-radius: 10px; /* Runde Ecken */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Schatten */
+    transition: transform 0.2s, box-shadow 0.2s; /* Übergangseffekte */
+}
+
+.kachel img {
+    width: 50px; /* Breite des Bildes */
+    height: 50px; /* Höhe des Bildes */
+}
+
+.kachel:hover {
+    transform: scale(1.05); /* Vergrößerung beim Hover */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3); /* Schatten beim Hover */
+}
+
+.kachel figcaption {
+    margin-top: 5px; /* Abstand zwischen Bild und Text */
+    text-align: center; /* Zentriert den Text unter dem Bild */
+}

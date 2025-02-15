@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tutorial-App für Web-Entwicklung mit Themen wie Node.js, HTML und mehr.">
+    <meta name="author" content="Fh Dortmund">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css ">
+    <link rel="stylesheet" type="text/css" href="css/navigation.css ">
+    <link rel="stylesheet" type="text/css" href="css/typography.css ">
+    <link rel="stylesheet" type="text/css" href="css/grid.css ">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/mobile.css" media="screen and (max-width: 768px)">
+    <link rel="stylesheet" type="text/css" href="css/desktop.css" media="screen and (min-width: 769px)">
+    <!-- Füge Font Awesome CDN hinzu -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Tutorial-App</title>
+</head>
+
+<body>
+    <div id="containertutorials">
+        <!-- Kopfbereich -->
+        <header>
+            <figure>
+                <img src="images/webinar.png" alt="Logo der Tutorial-App" width="50" height="50">
+                <figcaption>Tutorial Logo</figcaption>
+            </figure>
+            <h1>Tutorials zu Web-Entwicklung</h1>
+        </header>
+
+        <!-- Navigationsmenü -->
+        <nav>
+            <p>
+                <a href="list.html">liste der Kategorien</a> | <a href="tutorials.html">Tutorials der Kategorien</a> |
+                <a href="tutorial.html"> details zum Tutorial </a>| <a href="form.html"> hinzufügen zum tutorials</a>
+            </p>
+        </nav>
+
+        <!-- Hauptinhalt -->
+        <main>
+            <section>
+                <h2>Node.js - Schnelleinstieg</h2>
+                <figure id="nodejs">
+                    <img src="images/nodejs.png" alt="Node.js Logo" width="50" height="50">
+                    <figcaption>Node.js</figcaption>
+                </figure>
+                <p><strong>Datum:</strong> 12. Januar 2024</p>
+                <p><strong>Dauer:</strong> 2 Std. 35 Min.</p>
+                <p><strong>Beschreibung:</strong> In diesem Tutorial lernen Sie, wie Sie mit Node.js eine einfache
+                    Webanwendung
+                    aufbauen. Der Fokus liegt auf den Grundlagen von Node.js und den wichtigsten Konzepten.</p>
+                <p><a href="tutorial.html">Zum Tutorial</a></p>
+            </section>
+
+            <section>
+                <h2>HTML für Anfänger</h2>
+                <figure id="html">
+                    <img src="images/html-5.png" alt="HTML5 Logo" width="50" height="50">
+                    <figcaption>HTML5</figcaption>
+                </figure>
+                <p><strong>Datum:</strong> 5. Februar 2024</p>
+                <p><strong>Dauer:</strong> 1 Std. 45 Min.</p>
+                <p><strong>Beschreibung:</strong> Lernen Sie, wie Sie eine einfache Webseite mit HTML und CSS erstellen.
+                    Dieses Tutorial richtet sich an Anfänger und führt Sie Schritt für Schritt durch den gesamten
+                    Prozess.</p>
+                <p><a href="tutorial.html">Zum Tutorial</a></p>
+            </section>
+
+            <!-- Urheberrechtshinweise -->
+            <div class="credits">
+                <p>Node.js Icons erstellt von <a href="https://www.flaticon.com/de/kostenlose-icons/nodejs"
+                        title="Node.js Icons">Freepik - Flaticon</a></p>
+                <p>HTML5 Icons erstellt von <a href="https://www.flaticon.com/de/kostenlose-icons/html-5"
+                        title="HTML5 Icons">Freepik - Flaticon</a></p>
+                <p>Webinar Icons erstellt von <a href="https://www.flaticon.com/de/kostenlose-icons/webinar"
+                        title="Webinar Icons">Shahid-Mehmood - Flaticon</a></p>
+            </div>
+        </main>
+
+        <!-- Zusatzinformationen (Neueste Tutorials) -->
+        <aside>
+            <h3>Neueste Tutorials</h3>
+            <ul>
+                <li>
+                    <strong><a href="tutorial.html">Node.js - Schnelleinstieg</a></strong><br>
+                    <em>Datum:</em> 10. Januar 2024 | <em>Dauer:</em> 2 Std. 35 Min.
+                </li>
+                <li>
+                    <strong><a href="tutorial.html">HTML - Grundlagen</a></strong><br>
+                    <em>Datum:</em> 5. Februar 2024 | <em>Dauer:</em> 1 Std. 20 Min.
+                </li>
+                <li>
+                    <strong><a href="tutorial.html">JavaScript für Einsteiger</a></strong><br>
+                    <em>Datum:</em> 12. März 2024 | <em>Dauer:</em> 3 Std. 10 Min.
+                </li>
+            </ul>
+        </aside>
+
+        <!-- Fußbereich -->
+        <footer>
+            <p>&copy; 2024 Web-Anwendung für Tutorials. Alle Rechte vorbehalten.</p>
+        </footer>
+    </div>
+    <script src="js/burgermenu.js"></script>
+
+</body>
+
+</html>

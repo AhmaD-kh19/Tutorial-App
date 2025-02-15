@@ -1,0 +1,113 @@
+/* Allgemeine Formatierung für alle Überschriften */
+h1, h2, h3 {
+    font-family: 'Arial', sans-serif; /* Schriftart für alle Überschriften */
+    font-weight: bold;               /* Fette Schrift für alle Überschriften */
+}
+
+/* Spezifisches Styling für h1 */
+h1 {
+    font-size: 36px;                 /* Größere Schriftgröße für h1 */
+    color: #4CAF50;                  /* Grüne Schriftfarbe für h1 */
+    text-align: center;              /* Zentriert den h1-Text */
+    text-transform: uppercase;       /* Wandelt den Text in Großbuchstaben um */
+    margin-bottom: 20px;             /* Abstand unter der h1 */
+}
+
+/* Spezifisches Styling für h2 */
+h2 {
+    font-size: 28px;                 /* Mittlere Schriftgröße für h2 */
+    color: #333333;                  /* Dunkelgraue Schriftfarbe für h2 */
+    text-align: left;                /* Linksbündig ausrichten */
+    margin-bottom: 15px;             /* Abstand unter der h2 */
+}
+
+/* Spezifisches Styling für h3 */
+h3 {
+    font-size: 22px;                 /* Kleinere Schriftgröße für h3 */
+    color: #2196F3;                  /* Blaue Schriftfarbe für h3 */
+    font-style: italic;              /* Kursivschrift für h3 */
+    margin-bottom: 10px;             /* Abstand unter der h3 */
+}
+
+/* Hintergrundfarbe für den Navigationsbereich */
+nav {
+    background-color: #f4f4f4;  /* Helles Grau für den Hintergrund */
+    padding: 10px 0;            /* Etwas Abstand oben und unten */
+    border-radius: 5px;         /* Leicht abgerundete Ecken */
+    margin-bottom: 20px;        /* Abstand zum folgenden Bereich */
+}
+
+/* Hintergrundfarbe für den Zusatzinformationenbereich */
+aside {
+    background-color: #e0f7fa;  /* Helles Blau für den Hintergrund */
+    padding: 15px;              /* Etwas Abstand innen */
+    border-radius: 5px;         /* Abgerundete Ecken */
+    margin-top: 20px;           /* Abstand zum vorherigen Inhalt */
+}
+
+/* Links, deren über denen sich der Mauszeiger befindet */
+nav  a:hover { background-color: red; }
+
+/* Allgemeine Tabellenformatierung für alle Tabellen */
+table {
+    width: 100%; /* Setzt die Tabelle auf die volle Breite */
+    border-collapse: collapse; /* Entfernt Abstände zwischen Zellen */
+    margin: 20px 0; /* Fügt Abstand oberhalb und unterhalb der Tabelle hinzu */
+}
+
+/* Formatierung für Tabellenzellen */
+th, td {
+    padding: 8px 12px; /* Fügt Innenabstand in den Zellen hinzu */
+    border: 1px solid #ddd; /* Fügt einen leichten Rand um die Zellen hinzu */
+    text-align: left; /* Text wird linksbündig ausgerichtet */
+}
+
+/* Formatierung für Tabellenkopf und Tabellenfuß */
+thead, tfoot{
+    background-color: #4CAF50; /* Tabellenkopf wird grün */
+    color: white; /* Textfarbe des Tabellenkopfs wird weiß */
+}
+
+
+/* Formatierung für ungerade Zeilen im Tabellen-Body */
+tbody tr:nth-child(odd) {
+    background-color: #f2f2f2; /* Ungerade Zeilen im Tabellenkörper werden grau */
+}
+
+/* Formatierung für gerade Zeilen im Tabellen-Body (optional) */
+tbody tr:nth-child(even) {
+    background-color: #ffffff; /* Gerade Zeilen bleiben weiß */
+}
+
+/* Formatierung für die gesamte Tabelle bei Hover (optional) */
+tbody tr:hover {
+    background-color: #10798b; /* Hover-Effekt für Zeilen im Tabellenkörper */
+}
+
+#nodejs, #html{
+    float: left;
+}
+
+
+header {
+    display: flex;                     /* Aktiviert Flexbox für den Header */
+    align-items: center;              /* Zentriert Inhalt vertikal */
+    padding: 10px;                    /* Optional: Abstand um den Header */
+    background-color: #f8f8f8;       /* Optional: Hintergrundfarbe des Headers */
+    border-bottom: 1px solid #ccc;   /* Optional: Untere Grenze */
+}
+
+header figure {
+    margin: 0;                       /* Setzt den Margin für das figure auf 0 */
+    display: flex;                   /* Aktiviert Flexbox für das figure, falls erforderlich */
+    flex-direction: column;          /* Bild und Caption untereinander anordnen */
+    align-items: center;             /* Bild und Caption zentrieren */
+    margin-right: 10px;              /* Abstand zwischen Logo und Titel */
+}
+
+header h1 {
+    margin: 0;                       /* Setzt den Margin für die h1 auf 0 */
+}
+
+
+

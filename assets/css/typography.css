@@ -1,0 +1,7 @@
+/* Allgemeine Schriftart */
+body {
+    font-family: Helvetica, Arial, sans-serif; /* Festlegen der Schriftart */
+    margin: 0; /* Standardmargin zurücksetzen */
+    padding: 0; /* Standardpadding zurücksetzen */
+  }
+  

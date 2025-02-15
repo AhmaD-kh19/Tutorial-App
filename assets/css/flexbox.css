@@ -1,0 +1,19 @@
+#containertutorial, #containerlist {
+     display: flex; 
+}
+
+main { 
+    flex: 2 1 80%; 
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+aside{
+    flex-basis: 100px;
+}
+
+header, nav, aside, footer{
+    margin: 10px;
+    padding: 10px;
+    
+}
