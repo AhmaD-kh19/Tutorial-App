@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css ">
+    <link rel="stylesheet" type="text/css" href="css/navigation.css ">
+    <link rel="stylesheet" type="text/css" href="css/typography.css ">
+    <link rel="stylesheet" type="text/css" href="css/flexbox.css ">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/mobile.css" media="screen and (max-width: 768px)">
+    <link rel="stylesheet" type="text/css" href="css/desktop.css" media="screen and (min-width: 769px)">
+    <title>Tutorial-App</title>
+    <!-- Füge Font Awesome CDN hinzu -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<source src="Videos/G-04-nodejs-kernmodul-fs.mp4" type="video/mp4" title="Node.js Kernmodul fs">
+<source src="Videos/G-04-nodejs-kernmodul-fs.ogg" type="video/ogg" title="Node.js Kernmodul fs">
+
+<body>
+
+    <!-- Kopfbereich -->
+    <header>
+        <!-- Logo für die Web-Anwendung -->
+        <figure>
+            <img src="images/webinar.png" alt="Logo der Tutorial-App" width="50" height="50">
+            <figcaption>Tutorial Logo</figcaption>
+        </figure>
+        <h1>Node.js - Schnelleinstieg</h1>
+    </header>
+
+    <!-- Navigationsmenü -->
+    <nav>
+        <p>
+            <a href="list.html">liste der Kategorien</a> | <a href="tutorials.html">Tutorials der Kategorien</a> | <a
+                href="tutorial.html"> details zum Tutorial </a>| <a href="form.html"> hinzufügen zum tutorials</a>
+        </p>
+    </nav>
+
+    <div id="containertutorial">
+        <!-- Hauptinhalt -->
+        <main>
+            <section>
+                <h2>Info</h2>
+                <!-- Bild und Bildunterschrift -->
+                <figure id="nodejs">
+                    <img src="images/nodejs.png" alt="Logo von Node.js" width="50" height="50">
+                    <figcaption>Node.js</figcaption>
+                </figure>
+                <p><strong>Datum:</strong> 12. Januar 2024</p>
+                <p><strong>Dauer:</strong> 2 Std. 35 Min.</p>
+                <!-- Video zum Tutorial -->
+                <video width="640" controls>
+                    <source src="Videos/G-04-nodejs-kernmodul-fs.mp4" type="video/mp4" title="Node.js Kernmodul fs">
+                    <source src="Videos/G-04-nodejs-kernmodul-fs.ogg" type="video/ogg" title="Node.js Kernmodul fs">
+                    Ihr Browser unterstützt das Video-Element nicht.
+                </video>
+
+                <!-- Kapitelübersicht -->
+                <table>
+                    <!-- Tabellenkopf -->
+                    <thead>
+                        <tr>
+                            <th>Kapitel</th>
+                            <th>Kurzbeschreibung</th>
+                            <th>Dauer</th>
+                        </tr>
+                    </thead>
+
+                    <!-- Tabellenkörper -->
+                    <tbody>
+                        <tr>
+                            <td>Einführung in Node.js</td>
+                            <td>In diesem Tutorial lernen Sie, wie Sie mit Node.js eine einfache Webanwendung aufbauen.
+                            </td>
+                            <td>10 Min.</td>
+                        </tr>
+                        <tr>
+                            <td>Installation und Einrichtung</td>
+                            <td>Erfahren Sie, wie Sie Node.js und die benötigten Tools installieren und einrichten.</td>
+                            <td>15 Min.</td>
+                        </tr>
+                        <tr>
+                            <td>Erste Schritte mit Express.js</td>
+                            <td>Einführung in Express.js und wie man eine einfache Webanwendung erstellt.</td>
+                            <td>25 Min.</td>
+                        </tr>
+                        <tr>
+                            <td>Erstellen einer einfachen API</td>
+                            <td>In diesem Abschnitt lernen Sie, wie Sie eine einfache API mit Node.js und Express.js
+                                erstellen.</td>
+                            <td>30 Min.</td>
+                        </tr>
+                    </tbody>
+
+                    <!-- Tabellenfuß -->
+                    <tfoot>
+                        <tr>
+                            <td colspan="2">Gesamtzeit</td>
+                            <td>2 Std. 35 Min.</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </section>
+        </main>
+
+        <!-- Zusatzinformationen (neueste Tutorials) -->
+        <aside>
+            <h3>Neueste Tutorials</h3>
+            <ul>
+                <li>
+                    <strong><a href="tutorial.html">Node.js - Schnelleinstieg</a></strong><br>
+                    <em>Datum:</em> 10. Januar 2024 | <em>Dauer:</em> 2 Std. 35 Min.
+                </li>
+                <li>
+                    <strong><a href="tutorial.html">HTML - Grundlagen</a></strong><br>
+                    <em>Datum:</em> 5. Februar 2024 | <em>Dauer:</em> 1 Std. 20 Min.
+                </li>
+                <li>
+                    <strong><a href="tutorial.html">JavaScript für Einsteiger</a></strong><br>
+                    <em>Datum:</em> 12. März 2024 | <em>Dauer:</em> 3 Std. 10 Min.
+                </li>
+            </ul>
+
+            <!-- Urheberrechtshinweis für das Flaticon-Icon -->
+            <div class="credits">
+                <p>Webinar Icons erstellt von <a href="https://www.flaticon.com/de/kostenlose-icons/webinar"
+                        title="Webinar Icons">Shahid-Mehmood - Flaticon</a></p>
+            </div>
+        </aside>
+    </div>
+    <!-- Fußbereich -->
+    <footer>
+        <p>&copy; 2024 Web-Anwendung für Tutorials. Alle Rechte vorbehalten.</p>
+    </footer>
+    <script src="js/burgermenu.js"></script>
+
+</body>
+
+</html>
