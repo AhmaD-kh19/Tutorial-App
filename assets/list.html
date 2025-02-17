@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Web-Anwendung für Tutorials zu verschiedenen IT-Themen.">
     <meta name="author" content="Fh Dortmund">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tutorial-App</title>
+
+    <!-- Verknüpfung von Stylesheets für das Styling der Anwendung -->
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link rel="stylesheet" type="text/css" href="css/footer.css">
     <link rel="stylesheet" type="text/css" href="css/navigation.css">
@@ -16,13 +17,13 @@
     <link rel="stylesheet" type="text/css" href="css/tiles.css">
     <link rel="stylesheet" type="text/css" href="css/mobile.css" media="screen and (max-width: 768px)">
     <link rel="stylesheet" type="text/css" href="css/desktop.css" media="screen and (min-width: 769px)">
-    <!-- Füge Font Awesome CDN hinzu -->
+
+    <!-- Font Awesome für Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
 <body>
-
-    <!-- Kopfbereich -->
+    <!-- Kopfbereich mit Logo und Titel -->
     <header>
         <figure>
             <img src="images/webinar.png" alt="Logo der Tutorial-App" width="50" height="50">
@@ -42,9 +43,9 @@
     </nav>
 
     <div id="containerlist">
-        <!-- Hauptinhalt -->
+        <!-- Hauptinhalt der Seite -->
         <main>
-
+            <!-- Suchformular für Tutorials -->
             <form id="searchForm" action="https://labs.inf.fh-dortmund.de/tutorialService/testTutorialSearch.php"
                 method="get">
                 <label for="search">Suche:</label>
@@ -54,10 +55,10 @@
                 <button type="submit">Suchen</button>
             </form>
 
+            <!-- Auswahl einer Kategorie -->
             <h2>Wählen Sie eine Kategorie, um mehr Tutorials zu sehen:</h2>
             <div class="kachel-container"> <!-- Container für die Kacheln -->
-
-                <!-- Kategorie 1: Web-Entwicklung -->
+                <!-- Einzelne Kachel für Web-Entwicklung -->
                 <a href="tutorials.html?category=Web-Entwicklung" class="kachel">
                     <figure>
                         <img src="images/seo-und-web.png" alt="Icon für Web-Entwicklung">
@@ -65,7 +66,7 @@
                     </figure>
                 </a>
 
-                <!-- Kategorie 2: Enterprise-Software -->
+                <!-- Einzelne Kachel für Enterprise-Software -->
                 <a href="tutorials.html?category=Enterprise-Software" class="kachel">
                     <figure>
                         <img src="images/erp.png" alt="Icon für Enterprise-Software">
@@ -73,7 +74,7 @@
                     </figure>
                 </a>
 
-                <!-- Kategorie 3: Cybersicherheit -->
+                <!-- Einzelne Kachel für Cybersicherheit -->
                 <a href="tutorials.html?category=Cybersicherheit" class="kachel">
                     <figure>
                         <img src="images/cybersicherheit.png" alt="Icon für Cybersicherheit">
@@ -81,19 +82,17 @@
                     </figure>
                 </a>
 
-                <!-- Kategorie 4: Datenanalyse -->
+                <!-- Einzelne Kachel für Datenanalyse -->
                 <a href="tutorials.html?category=Datenanalyse" class="kachel">
                     <figure>
                         <img src="images/daten.png" alt="Icon für Datenanalyse">
                         <figcaption>Datenanalyse</figcaption>
                     </figure>
                 </a>
-
             </div>
         </main>
 
-
-        <!-- Zusatzinformationen (neueste Tutorials) -->
+        <!-- Seitenleiste mit neuesten Tutorials -->
         <aside>
             <h3>Neueste Tutorials</h3>
             <ul>
@@ -113,14 +112,14 @@
         </aside>
     </div>
 
-    <!-- Fußbereich -->
+    <!-- Fußbereich mit Copyright-Hinweis -->
     <footer>
         <p>&copy; 2024 Web-Anwendung für Tutorials. Alle Rechte vorbehalten.</p>
     </footer>
 
+    <!-- Einbindung von JavaScript-Dateien -->
     <script src="js/script.js"></script>
     <script src="js/burgermenu.js"></script>
-
 </body>
 
 </html>
