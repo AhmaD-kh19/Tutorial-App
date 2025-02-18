@@ -1,19 +1,18 @@
-#containertutorial, #containerlist {
-     display: flex; 
+#containertutorial, #containerlist { 
+    display: flex; /* Aktiviert Flexbox für die Container */
 }
 
 main { 
-    flex: 2 1 80%; 
-    margin-left: 5px;
-    margin-right: 5px;
+    flex: 2 1 80%; /* Flex-Wachstum: 2, Schrumpfen: 1, Basisbreite: 80% */
+    margin-left: 5px; /* Linker Außenabstand */
+    margin-right: 5px; /* Rechter Außenabstand */
 }
 
-aside{
-    flex-basis: 100px;
+aside {
+    flex-basis: 100px; /* Mindestbreite der Sidebar auf 100px festgelegt */
 }
 
-header, nav, aside, footer{
-    margin: 10px;
-    padding: 10px;
-    
+header, nav, aside, footer {
+    margin: 10px; /* Außenabstand */
+    padding: 10px; /* Innenabstand */
 }

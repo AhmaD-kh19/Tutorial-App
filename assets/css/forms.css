@@ -29,7 +29,7 @@ button:hover {
 .legendTI, .legendZR, .legendIT{
   background-color: #f9f9f9; /* Ein helleres Beige mit mehr Kontrast */
   border: 2px solid #ccc; /* Eine graue Standardgrenze für einen subtilen Rahmen */
-  border-top: 3px solid black; /* Dickerer schwarzer Rand oben */
+  border-top: 2px solid black; /* Dickerer schwarzer Rand oben */
   border-bottom: 3px solid black; /* Dickerer schwarzer Rand unten */
   border-radius: 10px; /* Runde Ecken */
   padding: 20px; /* Innenabstand für mehr Platz um die Inhalte */
@@ -48,6 +48,11 @@ input{
   border-bottom: 0.1cm solid burlywood ;
 }
 
+
+.fieldsetform{
+  border-bottom:0px;
+ 
+}
 
 
 

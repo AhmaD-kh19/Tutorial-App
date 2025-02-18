@@ -1,67 +1,87 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 
 <head>
+    <!-- Meta-Tag für Zeichencodierung und Ansichtsport (Viewport) für die mobile Darstellung -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Links zu verschiedenen Stylesheets für das Layout und Design der Seite -->
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link rel="stylesheet" type="text/css" href="css/footer.css ">
     <link rel="stylesheet" type="text/css" href="css/navigation.css ">
     <link rel="stylesheet" type="text/css" href="css/typography.css ">
     <link rel="stylesheet" type="text/css" href="css/flexbox.css ">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Media Queries für unterschiedliche Bildschirmgrößen (mobil und Desktop) -->
     <link rel="stylesheet" type="text/css" href="css/mobile.css" media="screen and (max-width: 768px)">
     <link rel="stylesheet" type="text/css" href="css/desktop.css" media="screen and (min-width: 769px)">
+
+    <!-- Titel der Seite -->
     <title>Tutorial-App</title>
-    <!-- Füge Font Awesome CDN hinzu -->
+
+    <!-- Füge Font Awesome CDN hinzu, um Icons zu verwenden -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
+<!-- Die Videoquellen werden hier angegeben (für das Tutorial-Video) -->
 <source src="Videos/G-04-nodejs-kernmodul-fs.mp4" type="video/mp4" title="Node.js Kernmodul fs">
 <source src="Videos/G-04-nodejs-kernmodul-fs.ogg" type="video/ogg" title="Node.js Kernmodul fs">
 
 <body>
 
-    <!-- Kopfbereich -->
+    <!-- Kopfbereich der Seite -->
     <header>
-        <!-- Logo für die Web-Anwendung -->
+        <!-- Logo der Web-Anwendung (Bild und Bildunterschrift) -->
         <figure>
             <img src="images/webinar.png" alt="Logo der Tutorial-App" width="50" height="50">
             <figcaption>Tutorial Logo</figcaption>
         </figure>
+
+        <!-- Hauptüberschrift der Seite -->
         <h1>Node.js - Schnelleinstieg</h1>
     </header>
 
     <!-- Navigationsmenü -->
     <nav>
+        <!-- Links zu verschiedenen Seiten innerhalb der Web-Anwendung -->
         <p>
-            <a href="list.html">liste der Kategorien</a> | <a href="tutorials.html">Tutorials der Kategorien</a> | <a
-                href="tutorial.html"> details zum Tutorial </a>| <a href="form.html"> hinzufügen zum tutorials</a>
+            <a href="list.html">Liste der Kategorien</a> |
+            <a href="tutorials.html">Tutorials der Kategorien</a> |
+            <a href="tutorial.html">Details zum Tutorial</a> |
+            <a href="form.html">Hinzufügen zu Tutorials</a>
         </p>
     </nav>
 
+    <!-- Container für den Hauptinhalt des Tutorials -->
     <div id="containertutorial">
         <!-- Hauptinhalt -->
         <main>
             <section>
+                <!-- Unterüberschrift des Inhalts -->
                 <h2>Info</h2>
-                <!-- Bild und Bildunterschrift -->
+
+                <!-- Bild und Bildunterschrift zum Thema des Tutorials (Node.js) -->
                 <figure id="nodejs">
                     <img src="images/nodejs.png" alt="Logo von Node.js" width="50" height="50">
                     <figcaption>Node.js</figcaption>
                 </figure>
+
+                <!-- Anzeige von Datum und Dauer des Tutorials -->
                 <p><strong>Datum:</strong> 12. Januar 2024</p>
                 <p><strong>Dauer:</strong> 2 Std. 35 Min.</p>
-                <!-- Video zum Tutorial -->
+
+                <!-- Das Tutorial-Video mit verschiedenen Quellen -->
                 <video width="640" controls>
                     <source src="Videos/G-04-nodejs-kernmodul-fs.mp4" type="video/mp4" title="Node.js Kernmodul fs">
                     <source src="Videos/G-04-nodejs-kernmodul-fs.ogg" type="video/ogg" title="Node.js Kernmodul fs">
+                    <!-- Wenn der Browser das Video nicht unterstützt, wird diese Nachricht angezeigt -->
                     Ihr Browser unterstützt das Video-Element nicht.
                 </video>
 
-                <!-- Kapitelübersicht -->
+                <!-- Kapitelübersicht des Tutorials in einer Tabelle -->
                 <table>
-                    <!-- Tabellenkopf -->
+                    <!-- Tabellenkopf mit den Spaltenüberschriften -->
                     <thead>
                         <tr>
                             <th>Kapitel</th>
@@ -70,7 +90,7 @@
                         </tr>
                     </thead>
 
-                    <!-- Tabellenkörper -->
+                    <!-- Tabellenkörper mit den verschiedenen Kapiteln des Tutorials -->
                     <tbody>
                         <tr>
                             <td>Einführung in Node.js</td>
@@ -96,7 +116,7 @@
                         </tr>
                     </tbody>
 
-                    <!-- Tabellenfuß -->
+                    <!-- Tabellenfuß mit der Gesamtzeit des Tutorials -->
                     <tfoot>
                         <tr>
                             <td colspan="2">Gesamtzeit</td>
@@ -107,7 +127,7 @@
             </section>
         </main>
 
-        <!-- Zusatzinformationen (neueste Tutorials) -->
+        <!-- Zusatzinformationen (Neueste Tutorials) -->
         <aside>
             <h3>Neueste Tutorials</h3>
             <ul>
@@ -132,10 +152,20 @@
             </div>
         </aside>
     </div>
+
     <!-- Fußbereich -->
     <footer>
-        <p>&copy; 2024 Web-Anwendung für Tutorials. Alle Rechte vorbehalten.</p>
+
+        <a href="" >Datenschutzerklärung</a> | <a href="">AGB</a> | <a href="">Impressum</a> 
+        <p>&copy; <span id="current-year"></span> Web-Anwendung für Tutorials. Alle Rechte vorbehalten.</p>
     </footer>
+
+    <!--Jahr dynamisch anzuzeigen-->
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+
+    <!-- Verknüpfung zur JavaScript-Datei für das Burger-Menü -->
     <script src="js/burgermenu.js"></script>
 
 </body>

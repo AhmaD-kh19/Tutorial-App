@@ -1,20 +1,22 @@
-
-@media screen and (min-width: 769px) {
-    #containerlist, #containertutorials, #containerform, #containertutorial {
-        display: grid;
+@media screen and (min-width: 769px) { /* Medienabfrage für Bildschirme ab 769px Breite */
+    
+    #containerlist, #containertutorials, #containerform, #containertutorial { 
+        display: grid; /* Aktiviert CSS-Grid */
+        
         grid-template-areas: 
-            "header header header"
-            "mainnav mainnav mainnav"
+            "header header header" /* Header über drei Spalten */
+            "mainnav mainnav mainnav" /* Navigation über drei Spalten */
+            "haupt haupt asid" /* Hauptbereich (2 Spalten) und Sidebar (1 Spalte) */
             "haupt haupt asid"
             "haupt haupt asid"
-            "haupt haupt asid"
-            "footer footer footer";
-        grid-template-columns: 20% 60% 20%;
+            "footer footer footer"; /* Footer über drei Spalten */
+        
+        grid-template-columns: 20% 60% 20%; /* Spaltenbreiten: 20% - 60% - 20% */
     }
 
     header { grid-area: header; }
-    nav { grid-area: mainnav; }
-    main { grid-area: haupt; }
-    aside { grid-area: asid; }
-    footer { grid-area: footer; }
+    nav { grid-area: mainnav; } 
+    main { grid-area: haupt; } 
+    aside { grid-area: asid; } 
+    footer { grid-area: footer; } 
 }

@@ -1,81 +1,78 @@
-@media screen and (max-width: 768px) {
-    #containerlist, #containertutorials, #containerform, #containertutorial{
-        display: grid;
+@media screen and (max-width: 768px) { /* Medienabfrage für Bildschirme bis 768px Breite */
+    #containerlist, #containertutorials, #containerform, #containertutorial {
+        display: grid; /* Aktiviert CSS-Grid */
+        
         grid-template-areas: 
-            "header header header"
-            "mainnav mainnav mainnav"
-            "haupt haupt haupt"
-            "asid asid asid"
-            "footer footer footer";
-        grid-template-columns: 20% 60% 20%;
+            "header header header" /* Header über drei Spalten */
+            "mainnav mainnav mainnav" /* Navigation über drei Spalten */
+            "haupt haupt haupt" /* Hauptbereich über drei Spalten */
+            "asid asid asid" /* Sidebar unter dem Hauptbereich */
+            "footer footer footer"; /* Footer über drei Spalten */
+        
+        grid-template-columns: 20% 60% 20%; /* Spaltenbreiten: 20% - 60% - 20% */
     }
 
-    header { grid-area: header; }
-    nav { grid-area: mainnav; }
-    main { grid-area: haupt; }
-    aside { grid-area: asid; }
-    footer { grid-area: footer; }
+    header { grid-area: header; } /* Header */
+    nav { grid-area: mainnav; } /* Navigation */
+    main { grid-area: haupt; } /* Hauptinhalt */
+    aside { grid-area: asid; } /* Sidebar */
+    footer { grid-area: footer; } /* Footer */
 }
-
-
 
 @media screen and (max-width: 768px) {
     h1 {
         font-size: 1.5rem; /* Kleinere Schriftgröße für den Titel */
-        color: #ff6600; /* Neue Farbe für den Titel (Orange) */
+        color: #ff6600; /* Orangefarbener Titel */
     }
 }
 
-
-
-
 /* Allgemeines Styling für Navigation */
 nav {
-    background-color: #333;
-    padding: 10px;
+    background-color: #333; /* Dunkler Hintergrund */
+    padding: 10px; /* Innenabstand */
 }
 
 nav p {
-    margin: 0;
+    margin: 0; /* Entfernt Standard-Außenabstand */
 }
 
 nav a {
-    color: white;
-    text-decoration: none;
-    display: inline-block;
-    padding: 8px 16px;
+    color: white; /* Weiße Links */
+    text-decoration: none; /* Unterstreichung entfernen */
+    display: inline-block; /* Links nebeneinander anzeigen */
+    padding: 8px 16px; /* Innenabstand */
 }
 
 /* Menü-Icon für mobile Ansicht */
 #menuToggle {
-    display: none;
-    font-size: 30px;
-    background: none;
-    border: none;
-    color: white;
+    display: none; /* Standardmäßig ausgeblendet */
+    font-size: 30px; /* Schriftgröße */
+    background: none; /* Kein Hintergrund */
+    border: none; /* Kein Rahmen */
+    color: white; /* Weiße Farbe */
 }
 
 /* Verstecke Links und zeige Menü-Icon bei einer Breite ≤ 480px */
 @media screen and (max-width: 480px) {
     #navLinks {
-        display: none; /* Verstecke die Links standardmäßig */
+        display: none; /* Versteckt die Links */
     }
 
     #menuToggle {
-        display: block; /* Zeige das Menü-Icon */
+        display: block; /* Zeigt das Menü-Icon */
     }
 
     /* Links untereinander anzeigen, wenn sie sichtbar sind */
     #navLinks a {
-        display: block;
-        margin-bottom: 10px;
+        display: block; /* Block-Anzeige für einzelne Zeilen */
+        margin-bottom: 10px; /* Abstand zwischen Links */
     }
 }
 
 /* Links nebeneinander anzeigen, wenn der Bildschirm > 480px ist */
 @media screen and (min-width: 481px) {
     #navLinks {
-        display: block;
+        display: block; /* Links sichtbar */
     }
 
     #menuToggle {
@@ -83,7 +80,7 @@ nav a {
     }
 
     #navLinks a {
-        display: inline-block;
-        margin-right: 20px;
+        display: inline-block; /* Links nebeneinander */
+        margin-right: 20px; /* Abstand zwischen Links */
     }
 }
