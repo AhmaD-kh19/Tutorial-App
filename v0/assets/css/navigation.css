@@ -1,0 +1,25 @@
+/* Navigation Styling */
+nav {
+    background-color: #007BFF; /* Sinnvolle Hintergrundfarbe für die Navigation */
+    color: white; /* Textfarbe */
+    padding: 15px 20px; /* Innenabstand oben und unten, links und rechts */
+    border-radius: 8px; /* Runde Ecken */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Box-Schattierung für den Navigationsbereich */
+    margin: 20px; /* Außenabstand für den Navigationsbereich */
+  }
+  
+  /* Link-Styling in der Navigation */
+  nav a {
+    color: white; /* Linkfarbe */
+    text-decoration: none; /* Entfernen der Unterstreichung */
+    padding-left: 10px; /* Innenabstand für Links */
+    padding-right: 10px; /* Innerabstand für Links */
+    margin: 0 10px; /* Außenabstand von 10 Pixeln von links und rechts */
+    transition: background-color 0.3s; /* Übergangseffekt für Hintergrundfarbe */
+  }
+  
+  /* Hover-Effekt für Links */
+  nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Hellerer Hintergrund, wenn der Mauszeiger darüber schwebt */
+    border-radius: 5px; /* Runde Ecken beim Hover */
+  }

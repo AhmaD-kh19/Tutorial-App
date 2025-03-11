@@ -1,0 +1,13 @@
+/* Fußbereich Styling */
+footer {
+    position: fixed; /* Fixiert den Fußbereich */
+    bottom: 0; /* Am unteren Rand der Seite */
+    left: 0; /* Links ausgerichtet */
+    right: 0; /* Rechts ausgerichtet */
+    background-color: #333; /* Dunkler Hintergrund für den Fußbereich */
+    color: white; /* Textfarbe */
+    padding: 10px; /* Innenabstand */
+    text-align: center; /* Zentrierter Text */
+  }
+
+  

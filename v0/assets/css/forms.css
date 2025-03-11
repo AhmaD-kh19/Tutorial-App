@@ -1,0 +1,58 @@
+/* Stil für die Labels, wenn das Eingabefeld ungültig ist */
+input:invalid {
+  color: red; /* Optional: rot für eine bessere Sichtbarkeit */
+}
+
+/* Entferne die Nachricht, wenn das Eingabefeld gültig ist */
+input:valid  {
+color: grey;}
+
+.ErforderlichesFeld::after{
+content: " (Erforderliches Feld)";
+color: red;
+}
+
+button {
+  background-color: #4CAF50; /* Hintergrundfarbe */
+  color: white; /* Textfarbe */
+  border: none; /* Entfernt den Standardrahmen */
+  border-radius: 10px; /* Runde Ecken */
+  padding: 10px 20px; /* Innenabstand für den Button */
+  cursor: pointer; /* Hand-Cursor bei Hover */
+  transition: background-color 0.3s; /* Übergangseffekt */
+}
+
+button:hover {
+  background-color: #45a049; /* Dunklere Farbe beim Hover */
+}
+
+.legendTI, .legendZR, .legendIT{
+  background-color: #f9f9f9; /* Ein helleres Beige mit mehr Kontrast */
+  border: 2px solid #ccc; /* Eine graue Standardgrenze für einen subtilen Rahmen */
+  border-top: 2px solid black; /* Dickerer schwarzer Rand oben */
+  border-bottom: 3px solid black; /* Dickerer schwarzer Rand unten */
+  border-radius: 10px; /* Runde Ecken */
+  padding: 20px; /* Innenabstand für mehr Platz um die Inhalte */
+  margin-bottom: 20px; /* Abstand nach unten zwischen anderen Elementen */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Leichter Schatten für Tiefe */
+}
+
+/* Verbesserung mit dem Hover-Effekt */
+.legendTI:hover, .legendZR:hover, legendIT:hover {
+  background-color: #f1f1f1; /* Hellerer Hintergrund beim Hover */
+}
+
+input{
+  border-top:  none;
+  border-right:  none;
+  border-bottom: 0.1cm solid burlywood ;
+}
+
+
+.fieldsetform{
+  border-bottom:0px;
+ 
+}
+
+
+

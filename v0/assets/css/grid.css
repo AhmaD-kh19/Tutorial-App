@@ -1,0 +1,31 @@
+main, aside {
+  border: 1px solid white; /* Weißer Rand um Hauptinhalt und Sidebar */
+  background-color: bisque; /* Hintergrundfarbe: Hellbraun (Bisque) */
+  margin: 15px; /* Außenabstand */
+  padding: 1em; /* Innenabstand */
+}
+
+header {
+  margin: 15px; /* Außenabstand */
+  padding: 1em; /* Innenabstand */
+}
+
+#containertutorials, #containerform { 
+  display: grid; /* Aktiviert CSS-Grid */
+  
+  grid-template-areas: 
+      "header header header" /* Header über drei Spalten */
+      "mainNav mainNav mainNav" /* Navigation über drei Spalten */
+      "haupt haupt aside" /* Hauptbereich (2 Spalten) und Sidebar (1 Spalte) */
+      "haupt haupt aside"
+      "haupt haupt aside"
+      "footer footer footer"; /* Footer über drei Spalten */
+  
+  grid-template-columns: 20% 60% 20%; /* Spaltenbreiten: 20% - 60% - 20% */
+}
+
+header { grid-area: header; } /* Header-Bereich */
+nav { grid-area: mainNav; } /* Navigationsbereich */
+main { grid-area: haupt; } /* Hauptinhalt */
+aside { grid-area: aside; } /* Sidebar */
+footer { grid-area: footer; } /* Footer */
